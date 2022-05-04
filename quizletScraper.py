@@ -35,7 +35,6 @@ def main():
 
     # Appends all questions and answers to cards
     for p in soup.find_all(class_='SetPageTerm-sideContent'):
-        # If type answer
         if a:
             cards += f'\tA{counter + 1}) {p.text}\n'
             a = False
